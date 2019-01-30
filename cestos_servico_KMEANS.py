@@ -22,8 +22,8 @@ array = np.full((qtd_alvos, len(sao_paulo)), sao_paulo , dtype=np.float64)
 
 base = pd.DataFrame(array , columns = ['Y','X'])
 
-base['NOISE_X'] = np.random.random((qtd_alvos,1)) / 70
-base['NOISE_Y'] = np.random.random((qtd_alvos,1)) / 50
+base['NOISE_X'] = np.random.random((qtd_alvos,1)) / 80
+base['NOISE_Y'] = np.random.random((qtd_alvos,1)) / 180
 
 base['SIDE_X'] = np.random.choice([-1, 1], size=1000, p=[.6, .4])
 base['SIDE_Y'] = np.random.choice([-1, 1], size=1000, p=[.6, .4])
